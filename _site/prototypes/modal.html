@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!–[if IE 7 ]> <html lang="en" class="ie7″> <![endif]–> 
+<!–[if IE 8 ]> <html lang="en" class="ie8″> <![endif]–> 
+<!–[if IE 9 ]> <html lang="en" class="ie9″> <![endif]–>
+<!–[if (gt IE 9)|!(IE)]><!–> <html lang="en"> <!–<![endif]–> 
+
+<!-- also: add htmnl5 shim: http://remysharp.com/2009/01/07/html5-enabling-script/ -->
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>modal</title>
+  <!-- <meta name="viewport" content="width=device-width"> -->
+  
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/lib.css">
+  <link rel="stylesheet" href="/css/webfontkit-daniel/stylesheet.css">
+  <link rel="stylesheet" href="/css/modal.css">
+  
+  <script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="/js/lib.js"></script>
+  
+  </head><body class="modal wireframe">
+
+<h1 class="page-title">modal</h1>
+ 
+  <a class="back-to-index" href="/">goto index</a>
+
+
+<p class="modal-title">
+  <span class="icon new-voucher wireframe-image"></span>
+  Lorem ipsum something
+</p>
+
+<hr style="position: relative; top: -1.7em;">
+
+<form action="">
+
+<label
+  for="voucher-name">
+  Name
+</label>
+<input
+  id="voucher-name"
+  type="text"
+  name="name"
+  value="" 
+  class="ajax-form-text">
+ 
+
+  <label
+    for="voucher-value">
+    Wert
+  </label>
+  
+  <input
+      id="voucher-value"
+      type="text"
+      name="name"
+      value="" 
+      class="voucher-value" />
+
+
+
+
+<select name="type" id="type" class="voucher-unit-select">
+  <option value="0">%</option>
+  <option value="1">€</option>
+</select>
+
+<br>
+
+<p>
+  <span
+      data-jq-id="toggle-voucher-extended-options"
+      data-jq-method="toggle"
+      data-jq-target="voucher-extended-options"
+      data-jq-arguments="300"
+      >
+    Erweiterte Optionen
+  </span>
+</p>
+
+
+<p  class="voucher-extended-options"
+    data-jq-id="voucher-extended-options"
+    >
+      Extended Options sfsdd
+</p>
+
+
+
+<!-- 
+<label class="radio-label">
+<input
+  type="radio"
+  name="voucher-unit"
+  value="percent"
+  align=""
+  tabindex=""
+  checked="">
+  sth
+</label>
+
+<br>
+<label class="radio-label">sth
+<input
+  type="radio"
+  name="voucher-unit"
+  value="percent"
+  align=""
+  tabindex=""
+  checked="true">
+</label> -->
+
+
+<hr>
+
+<input
+ type="submit"
+ value="Submit"
+ class="button" />
+
+<a href="/" class="reset-form">Reset</a>
+
+</form>
+
+</div> <!-- modal -->
+
+
+  
+  <script type="text/javascript" src="/js/modal.js"></script>
+</body></html>

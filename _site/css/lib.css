@@ -9,21 +9,83 @@ NOTES:
 
 
 
-html, form {
+html {
   font-family: Helvetica, Arial, sans-serif;
+  background-color: #ddd;
 }
+
+body {
+  width: 90%;
+  box-shadow: 5px 5px 5px #babbb5;
+  margin: 10em auto;
+  background-color: #fff;
+  
+}
+
+
+.page-title, .back-to-index {
+  font-family: Helvetica, Arial;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  padding: 0.1em 1em;
+  background-color: #444;
+  color: #ddd;
+  box-shadow: 5px 5px 5px #babbb5;
+}
+.back-to-index {
+  top: 5em;
+}
+
+.index {
+  width: 50%;
+  padding: 1em;
+}
+
+.wireframe {
+  font-family: daniel_blackregular;
+  }
+
+.wireframe, .wireframe input {
+  border: 5px solid transparent;
+  border-image: url("/img/wireframe-border.png") 10 10 10 10 repeat;
+}
+
+.wireframe hr { 
+  border: 3px solid transparent;
+  border-image: url("/img/wireframe-border.png") 7 9 4 3 repeat;
+
+}
+
+.wireframe-image {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-color: gray;
+  background-size: 100% 100%;
+  background-image: url(/img/icon.png);
+  border: 2px solid #444;
+  border-collapse: collapse;
+}
+
+.icon {
+  width: 0.85em;
+  height: 0.85em;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-weight: bold;
+  font-family: daniel_blackregular;
+  font-weight: normal;
   text-transform: capitalize;
   text-decoration: none;
 }
 
-h1 { font-size: 6.87em; }
-h2 { font-size: 4.24em; }
-h3 { font-size: 2.62em; }
-h4 { font-size: 1.62em; }
+h1 { font-size: 3.00em; }
+h2 { font-size: 2.50em; }
+h3 { font-size: 2.00em; }
+h4 { font-size: 1.50em; }
 h5 { font-size:    1em; }
 h6 { font-size: 0.62em; }
 

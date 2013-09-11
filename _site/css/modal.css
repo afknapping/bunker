@@ -1,0 +1,102 @@
+.modal { 
+  width: 500px;
+  /*border: 2px solid gray;*/
+  padding: 0.62em;
+
+}
+
+
+.modal-title {
+  font-size: 1.62em;
+  /*border-bottom: 1px solid gray;*/
+  font-weight: bold;
+}
+
+hr {
+  height: 0;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}  
+input {
+  margin: 0;
+  margin-bottom: 1.5em;
+  font-size: 1.2em;
+  padding: 0.2em;
+  font-family: monospace;
+  border: 1px solid #111;
+  background-color: #eee;
+  transition: background-color 0.4s ease;
+  display: block;
+} 
+input:focus, a:focus, select:focus, input:hover, a:hover, select:hover, [data-jq-method]:hover {
+  outline: none;
+  background-color: #ffffaa;
+  transition: background-color 0.7s ease;
+}
+
+select {
+  /*box-sizing: border-box;*/
+  /*background-color: red;*/
+  background: none;
+  /*border: none;*/
+  border-radius: 0;
+  /*padding: 0;*/
+  /*opacity: 0;*/
+  background: transparent;
+  /*border: 1px solid black;*/
+  /*height: 34px;*/
+  -webkit-appearance: none;
+  appearance: none;
+  /*padding: 0.3em;*/
+  height: 2.4em;
+  width: 2em;
+  padding: 0 0.5em;
+  display: block;
+}
+
+input[type="submit"] {
+  font-family: inherit;
+  background-color: #f00;
+  font-size: 1em;
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+input[type="submit"]:focus, input[type="submit"]:hover {
+  background-color: #900;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+input[type="submit"], .reset-form {
+  text-transform: uppercase; /* uppercase needs to be positioned a bit lower to look right */
+  position: relative;
+  top: -0.3em;
+  letter-spacing: 0.2em;
+  padding: 0.4em; /* same as letter spacing */
+}
+
+.button {
+  display: inline-block;
+}
+
+.reset-form {
+  font-size: 0.8em;
+  margin-left: 1em;
+}
+
+
+[data-jq-method] {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.voucher-extended-options {
+  display: none;
+}

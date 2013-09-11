@@ -1,8 +1,7 @@
 ---
 layout: default
+title: index
 ---
-
-hello index
 
 {% for prototype in site.prototypes %}
 - [{{ prototype }}](prototypes/{{ prototype }}.html)

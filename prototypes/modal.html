@@ -1,0 +1,106 @@
+---
+title: modal
+layout: default
+---
+
+
+<p class="modal-title">
+  <span class="icon new-voucher wireframe-image"></span>
+  Lorem ipsum something
+</p>
+
+<hr style="position: relative; top: -1.7em;">
+
+<form action="">
+
+<label
+  for="voucher-name">
+  Name
+</label>
+<input
+  id="voucher-name"
+  type="text"
+  name="name"
+  value="" 
+  class="ajax-form-text">
+ 
+
+  <label
+    for="voucher-value">
+    Wert
+  </label>
+  
+  <input
+      id="voucher-value"
+      type="text"
+      name="name"
+      value="" 
+      class="voucher-value" />
+
+
+
+
+<select name="type" id="type" class="voucher-unit-select">
+  <option value="0">%</option>
+  <option value="1">€</option>
+</select>
+
+<br>
+
+<p>
+  <span
+      data-jq-id="toggle-voucher-extended-options"
+      data-jq-method="toggle"
+      data-jq-target="voucher-extended-options"
+      data-jq-arguments="300"
+      >
+    Erweiterte Optionen
+  </span>
+</p>
+
+
+<p  class="voucher-extended-options"
+    data-jq-id="voucher-extended-options"
+    >
+      Extended Options sfsdd
+</p>
+
+
+
+<!-- 
+<label class="radio-label">
+<input
+  type="radio"
+  name="voucher-unit"
+  value="percent"
+  align=""
+  tabindex=""
+  checked="">
+  sth
+</label>
+
+<br>
+<label class="radio-label">sth
+<input
+  type="radio"
+  name="voucher-unit"
+  value="percent"
+  align=""
+  tabindex=""
+  checked="true">
+</label> -->
+
+
+<hr>
+
+<input
+ type="submit"
+ value="Submit"
+ class="button" />
+
+<a href="/" class="reset-form">Reset</a>
+
+</form>
+
+</div> <!-- modal -->
+
