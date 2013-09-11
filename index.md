@@ -3,6 +3,6 @@ layout: default
 title: index
 ---
 
-{% for prototype in site.prototypes %}
-- [{{ prototype }}](prototypes/{{ prototype }}.html)
+{% for module in site.modules %}
+- [{{ module }}](modules/{{ module }}.html)
 {% endfor %}

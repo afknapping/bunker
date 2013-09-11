@@ -2,4 +2,4 @@ name: PROTOTYPES
 markdown: redcarpet
 pygments: true
 baseurl: /
-prototypes: [modal]
+modules: [modal]
