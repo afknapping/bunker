@@ -1,0 +1,5 @@
+name: PROTOTYPES
+markdown: redcarpet
+pygments: true
+baseurl: /
+prototypes: [voucher-code-v3, something]

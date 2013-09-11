@@ -1,0 +1,71 @@
+/*
+NOTES:
+  icons
+    width is important. because.
+    sprites: enough space between sprites? use sub-element to frame sprite? => markup fuckup.
+
+
+*/
+
+
+
+html, form {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+h1 { font-size: 6.87em; }
+h2 { font-size: 4.24em; }
+h3 { font-size: 2.62em; }
+h4 { font-size: 1.62em; }
+h5 { font-size:    1em; }
+h6 { font-size: 0.62em; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1em;
+  margin-bottom: 1em;
+}
+
+h2, h3, h4, h5, h6 {
+  /*padding-top: 1em;*/
+  margin-top: 1em;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+
+p, img, blockquote, pre, code, ul, .timestamp {
+margin-bottom: 1em;
+line-height: 1.3em;
+  }
+
+em { font-weight: bold;}
+
+
+
+
+body::selection {
+  background: #ffb7b7;
+  }
+
+/*  */
+
+
+/* BEHAVIOUR STUFF */
+
+.toggle {
+  transition: background-color 0.4s ease;
+  display: block;
+}
+
+/* class for error: marking and empty text markup; */
+
+
+

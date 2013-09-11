@@ -1,0 +1,207 @@
+.modal { 
+  width: 300px;
+  margin: 100px auto auto auto;
+  border: 2px solid gray;
+  padding: 0.62em;
+}
+
+
+.modal-title {
+  font-size: 1.62em;
+  border-bottom: 1px solid gray;
+  font-weight: bold;
+}
+
+
+.new-voucher {
+
+}
+
+.wireframe {}
+.wireframe-image {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-color: gray;
+  background-size: 100% 100%;
+  background-image: url(icon.png);
+  border: 2px solid #444;
+  border-collapse: collapse;
+}
+
+.icon {
+  width: 0.85em;
+  height: 0.85em;
+}
+
+
+
+
+
+/*  *************************************************
+
+    form fields according to
+    http://www.onextrapixel.com/2012/10/26/custom-style-all-your-form-elements-with-pure-css-and-no-javascript/
+    
+    ************************************************** */
+
+
+      /*
+reset
+      */
+input, select, textarea { 
+    margin: 0; 
+    padding: 0; 
+    font-size: 0.85em; /* this is optional, I like the fonts a little smaller */
+    outline: none; 
+    font-family: inherit;
+    box-sizing:border-box; /* make sure you use the other vendor prefixes */
+}
+
+      /*
+inputs
+      */
+input[type="radio"], 
+input[type="checkbox"] { 
+    position: absolute; left: -999em; 
+}
+
+input[type="radio"] + label:before, 
+input[type="checkbox"] + label:before { 
+    content:""; /* this is generated content*/ 
+    display: inline-block; /* make this fake elements inline block */
+    position:relative; /* we need to move the element without effecting the doc flow */
+    top:0.25em;  /* we're moving it slightly down for alignment purposes */
+    left:-2px; /* we're moving it slightly to the left */
+    width:25px; height:25px; /* the width and height of the fake elements */
+    background-image:url(/img/formelements.png); /* the background image sprite */
+}
+
+input[type="checkbox"] + label:before { background-position: 0 -25px;}
+input[type="checkbox"]:checked + label:before {background-position: 0 0 ; }
+input[type="radio"] + label:before { background-position: -25px -25px;}
+input[type="radio"]:checked + label:before { background-position: -25px 0;}
+
+.ie8 label:before { 
+  display:none; content:none; /*this removes the fake content*/
+}
+.ie8 input[type="checkbox"], .ie8 input[type="radio"], .ie7 input[type="checkbox"], .ie7 input[type="radio"] {
+  position: static; left:0; /* this puts the inputs back in their place */
+}
+
+/* "optional" / test this */
+
+.ie8 input[type="checkbox"], .ie8 input[type="radio"] { 
+    position:relative; top:5px; 
+    margin-right:0.5em; 
+}
+
+
+      /*
+select box
+      */
+div.styled { 
+    overflow:hidden; /* this hides the select's drop button */
+    padding:0; 
+    margin:0; 
+    background: white url(formelements-select.png) no-repeat bottom right; 
+    /* this is the new drop button, in image form */
+    width:12em; border-radius:2px; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2); 
+    border: solid 1px #ccc; 
+}
+
+div.styled select { 
+    width:115%; /* this percentage effectively extends the drop down button out of view */
+    background-color:transparent; /* this hides the select's background making any styling visible from the div */ 
+    background-image:none; 
+    -webkit-appearance: none; /* this is required for Webkit browsers */
+    border:none; 
+    box-shadow:none; 
+    padding:0.3em 0.5em; /* padding should be added to the select, not the div */
+}
+
+
+
+.ie7 div.styled {border:none; }
+.ie7 div.styled select { 
+    width:100%; 
+    background-color:white; 
+    border: solid 1px #ccc; 
+    padding:0.3em 0.5em; 
+}
+
+
+
+
+
+      /*
+file upload
+      */
+
+    /* This styles the text box: */
+input[type="file"] { 
+    position: relative /* this needs to be in place for the pseudo element to position properly */; 
+    -webkit-appearance: none /* this is the key to clearing the default styling */; 
+    width: 40%; 
+    padding:0; 
+    background-color: #f5f5f5; 
+    box-shadow: inset 0 2px 3px rgba(0,0,0,0.2); 
+    border:solid 1px #ccc; 
+}
+
+    /* This removes the default file upload button: */
+input[type=file]::-webkit-file-upload-button { 
+    width: 0; 
+    padding: 0; 
+    margin: 0; 
+    -webkit-appearance: none; 
+    border: none; 
+}
+
+    /* This styles the upload file button, you can even change the wording. */
+
+input[type="file"]:after { 
+    content: "Upload File";
+    margin:0 0 0 0.5em; 
+    display: inline-block; left: 100%; position: relative; 
+    background: white url(formelements-select.png) no-repeat center left; 
+    padding:0.3em 0.5em; 
+    border: solid 1px #ccc; 
+    -webkit-appearance: none; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2); 
+}
+
+
+
+      /*
+text fields
+      */
+
+/* For text fields and text boxes: */
+input[type="text"], textarea { 
+    width:12em; 
+    border-radius:2px; 
+    border: solid 1px #ccc; 
+    padding:0.4em; 
+    background-color: #f5f5f5; 
+    box-shadow: inset 0 2px 3px rgba(0,0,0,0.2); 
+}
+
+/* new html5 input types */
+input[type="tel"], 
+input[type="email"], 
+input[type="number"] {
+}
+
+
+      /*
+submit & buttons
+      */
+input[type="submit"], input[type="button"] { 
+    background: white url(formelements-select.png) no-repeat center left; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2); 
+    border-radius:4px; 
+    border: solid 1px #ccc; 
+    padding:0.3em 0.5em; 
+}
+
