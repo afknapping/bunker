@@ -1,0 +1,122 @@
+//
+  * NOTES:
+  *  icons
+  *    width is important. because.
+  *    sprites: enough space between sprites? use sub-element to frame sprite? => markup fuckup.
+
+html
+  font-family: Helvetica, Arial, sans-serif
+  background-color: #ddd
+
+body
+  width: 90%
+  box-shadow: 5px 5px 5px #babbb5
+  margin: 10em auto
+  background-color: #fff
+
+.page-title
+  font-family: Helvetica, Arial
+  font-weight: bold
+  position: absolute
+  left: 0
+  top: 0.2em
+  padding: 0.1em 1em
+  background-color: #444
+  color: #ddd
+  box-shadow: 5px 5px 5px #babbb5
+
+.back-to-index
+  font-family: Helvetica, Arial
+  font-weight: bold
+  position: absolute
+  left: 0
+  top: 0.2em
+  padding: 0.1em 1em
+  background-color: #444
+  color: #ddd
+  box-shadow: 5px 5px 5px #babbb5
+  top: 5em
+
+.index
+  width: 50%
+  padding: 1em
+
+.wireframe
+  font-family: daniel_blackregular
+  border: 5px solid transparent
+  border-image: url("/img/wireframe-border.png") 10 10 10 10 repeat
+  input
+    border: 5px solid transparent
+    border-image: url("/img/wireframe-border.png") 10 10 10 10 repeat
+  hr
+    border: 3px solid transparent
+    border-image: url("/img/wireframe-border.png") 7 9 4 3 repeat
+
+.wireframe-image
+  display: inline-block
+  background-repeat: no-repeat
+  background-color: gray
+  background-size: 100% 100%
+  background-image: url(/img/icon.png)
+  border: 2px solid #444
+  border-collapse: collapse
+
+.icon
+  width: 0.85em
+  height: 0.85em
+
+h1, h2, h3, h4, h5, h6
+  clear: both
+  font-family: daniel_blackregular
+  font-weight: normal
+  text-transform: capitalize
+  text-decoration: none
+
+h1
+  font-size: 3.00em
+
+h2
+  font-size: 2.50em
+
+h3
+  font-size: 2.00em
+
+h4
+  font-size: 1.50em
+
+h5
+  font-size: 1em
+
+h6
+  font-size: 0.62em
+
+h1, h2, h3, h4, h5, h6
+  line-height: 1.1em
+  margin-bottom: 1em
+
+h2, h3, h4, h5, h6
+  //padding-top: 1em;
+  margin-top: 1em
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+  text-decoration: none
+
+p, img, blockquote, pre, code, ul, .timestamp
+  margin-bottom: 1em
+  line-height: 1.3em
+
+em
+  font-weight: bold
+
+body::selection
+  background: #ffb7b7
+
+//
+
+// BEHAVIOUR STUFF
+
+.toggle
+  transition: background-color 0.4s ease
+  display: block
+
+// class for error: marking and empty text markup;
